@@ -131,7 +131,7 @@ exports.rateHostelById = function (req, res) {
 };
 
 exports.handlePosts = function (req, res) {
-  let hostelId = req.body.talkId;
+  let hostelId = req.body.hostelId;
   let newRating = req.body.rating;
   hostels
     .rateHostel(hostelId, newRating)
